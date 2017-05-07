@@ -64,7 +64,7 @@ WordPress4.7.2のアップデートで明らかになったことは、脆弱性
 
 #### [BackWPup](https://ja.wordpress.org/plugins/backwpup/)
 
-利用者数が比較的多く、更新も今のところ安定している。日本語での解説が多いこ。
+利用者数が比較的多く、更新も今のところ安定している。日本語での解説が多い。
 
 サイズの大きい画像ファイルをたくさんアップロードしている場合、BackWPupはファイルのバックアップに失敗する。運用において、3kや4kクラスの写真のアップロードは禁止すべきである。
 
@@ -177,7 +177,7 @@ WordPress4.7.2のアップデートで明らかになったことは、脆弱性
 ※All In One WP Security & Firewallとの比較あるいは併用を検討中。
 
 
-##WordPressテーマの選択
+##　WordPressテーマの選択
 
 選択肢は次の3種類である。
 
@@ -224,12 +224,12 @@ WordPressのコーディング基準に反しており、高機能なものほ�
 ```
 ErrorDocument 503 /maintenance.html
 
-&lt;IfModule mod_rewrite.c&gt;
+<IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{REQUEST_URI} !=/maintenance.html
   RewriteCond %{REMOTE_ADDR} !=管理者のIPアドレス
   RewriteRule ^.*$ - [R=503,L]
-&lt;/IfModule&gt;
+</IfModule>
 ```
 
 [Webサイトのメンテナンス中画面を出す正しい作法と.htaccessの書き方](http://web-tan.forum.impressrd.jp/e/2009/06/16/5880)より。
